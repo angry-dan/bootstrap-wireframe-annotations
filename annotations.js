@@ -3,7 +3,7 @@ jQuery(function($){
 
   var allTooltips = $();
 
-  $('<button class="btn btn-info"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Toggle annotations</button>')
+  $('<button class="btn btn-info" data-toggle="button" aria-pressed="false"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Toggle annotations</button>')
     .css({
       position: 'fixed',
       right: '1em',
