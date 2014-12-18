@@ -3,9 +3,9 @@ jQuery(function($){
 
   var allTooltips = $();
 
-  $('<button>Toggle annotations</button>')
+  $('<button class="btn btn-info"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Toggle annotations</button>')
     .css({
-      position: 'absolute',
+      position: 'fixed',
       right: '1em',
       top: '1em'
     })
@@ -13,7 +13,6 @@ jQuery(function($){
     .click(function(){
       allTooltips.tooltip('toggle');
     });
-
 
   $('#annotations>[data-ref]').each(function(){
     var tooltip = $($(this).data('ref')).tooltip({
