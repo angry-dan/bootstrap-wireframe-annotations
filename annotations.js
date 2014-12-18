@@ -9,7 +9,7 @@ jQuery(function($){
       right: '1em',
       top: '1em'
     })
-    .prependTo('body')
+    .appendTo('body')
     .click(function(){
       allTooltips.tooltip('toggle');
     });
